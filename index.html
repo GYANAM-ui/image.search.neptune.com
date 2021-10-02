@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://img.icons8.com/color/50/000000/search--v1.png" type="image/x-icon">
-    <title>Search Photos By Neptune</title>
+    <title>Login now to use our free images</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -14,22 +14,71 @@
 
 <body>
     <div class="container">
-        <h3 class="header bg-danger">
-            Search Photos For Your Website
+        <h3 class="header bg-success">
+            Login now to use our free images
         </h3>
-        <form id="myForm" autocomplete="off" class="my-4 form-inline">
-            <input required placeholder="Search" type="text" name="search" id="search" class="form-control col mr-2">
-            <button class="btn btn-success" type="submit"> <i class="fa fa-search"></i> Search</button>
-        </form>
         <center>
-            <h4 class="btn btn-primary" id="about"></h4>
-            <hr>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+                <div class="form-group">
+                    <label>Enter name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                    <label>Profile image</label>
+                    <input type="text" name="image" id="image" class="form-control" placeholder="Enter image url" required>
+                    <button style="font-size: 20px;font-weight: 600;" class="btn btn-success btn-block mt-3" onclick="login();">Login</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 mt-3 contact_div">
+                <div class="form-group">
+                    <div id="support__conatct__div" class="btn btn-primary">Support? wehelp@neptuneimage.com</div>
+                    <p class="text-primary">
+                        <i class="fa fa-arrow-up">&nbsp;</i> click above suport button to reach us.
+                    </p>
+                </div>
+            </div>
+            <h4 class="text-primary">
+                <img src="https://img.icons8.com/color/50/000000/search--v1.png" alt=""> Neptune Images
+            </h4>
         </center>
-        <div id="result"></div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script>
+        (function(_0x50fa5e, _0x4c51df) {
+            var _0xd7b5ee = _0x30a5,
+                _0x498a9b = _0x50fa5e();
+            while (!![]) {
+                try {
+                    var _0x3dde21 = -parseInt(_0xd7b5ee(0x1ae)) / 0x1 + -parseInt(_0xd7b5ee(0x1a5)) / 0x2 * (-parseInt(_0xd7b5ee(0x1af)) / 0x3) + -parseInt(_0xd7b5ee(0x1a8)) / 0x4 + parseInt(_0xd7b5ee(0x1ac)) / 0x5 * (parseInt(_0xd7b5ee(0x1a9)) / 0x6) + parseInt(_0xd7b5ee(0x1b0)) / 0x7 * (parseInt(_0xd7b5ee(0x1ad)) / 0x8) + -parseInt(_0xd7b5ee(0x1b1)) / 0x9 * (parseInt(_0xd7b5ee(0x1b4)) / 0xa) + parseInt(_0xd7b5ee(0x1b3)) / 0xb;
+                    if (_0x3dde21 === _0x4c51df) break;
+                    else _0x498a9b['push'](_0x498a9b['shift']());
+                } catch (_0x41fae5) {
+                    _0x498a9b['push'](_0x498a9b['shift']());
+                }
+            }
+        }(_0x34f1, 0x84bff));
+
+        function login() {
+            var _0x1f778f = _0x30a5;
+            username = document[_0x1f778f(0x1a6)]('name')[_0x1f778f(0x1a4)], profileImage = document[_0x1f778f(0x1a6)](_0x1f778f(0x1aa))[_0x1f778f(0x1a4)];
+            if (username, profileImage == '') {} else localStorage[_0x1f778f(0x1ab)](_0x1f778f(0x1a3), username), localStorage[_0x1f778f(0x1ab)]('profile', profileImage), window[_0x1f778f(0x1a7)] = _0x1f778f(0x1b2);
+        }
+
+        function _0x30a5(_0x19d13f, _0x9ba14f) {
+            var _0x34f107 = _0x34f1();
+            return _0x30a5 = function(_0x30a583, _0x7091ef) {
+                _0x30a583 = _0x30a583 - 0x1a3;
+                var _0x13354c = _0x34f107[_0x30a583];
+                return _0x13354c;
+            }, _0x30a5(_0x19d13f, _0x9ba14f);
+        }
+
+        function _0x34f1() {
+            var _0x440750 = ['home.html', '6898826SNTRHR', '531680eIdEfY', 'username', 'value', '48050kqxkJo', 'getElementById', 'location', '1235944yAZJIk', '6ExQBff', 'image', 'setItem', '3956345CclzEi', '80VhUQNU', '1084302AEqKxq', '18nsJeSO', '373765ugYzll', '27KtfZbI'];
+            _0x34f1 = function() {
+                return _0x440750;
+            };
+            return _0x34f1();
+        }
+    </script>
 </body>
 
 </html>
